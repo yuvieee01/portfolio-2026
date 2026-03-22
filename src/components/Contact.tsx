@@ -1,12 +1,16 @@
 "use client";
 import { motion } from "framer-motion";
-import { Mail, Phone, MapPin, Send, Github, Linkedin } from "lucide-react";
+import { Mail, Phone, MapPin, Send, Github, Linkedin, CheckCircle } from "lucide-react";
+import { useForm, ValidationError } from '@formspree/react';
 
 export default function Contact() {
   const fadeUpVariants = {
     hidden: { opacity: 0, y: 40 },
     visible: { opacity: 1, y: 0 }
   };
+
+  // Replace "YOUR_FORM_ID_HERE" with your actual Formspree ID (e.g., "mkgwjqwe")
+  const [state, handleSubmit] = useForm("mreywqpb");
 
   return (
     <section id="contact" className="relative w-full bg-slate-50 dark:bg-black py-32 px-6 flex flex-col items-center justify-center overflow-hidden transition-colors duration-300">
@@ -39,11 +43,11 @@ export default function Contact() {
               <h3 className="text-2xl font-bold text-slate-900 dark:text-white mb-6">Contact Information</h3>
               
               <div className="space-y-6">
-                <a href="mailto:me.yuvraj432@gmail.com" className="flex items-center gap-4 text-slate-600 dark:text-gray-400 hover:text-emerald-600 dark:hover:text-emerald-400 transition-colors group">
+                <a href="mailto:yuvraj.lpu432@gmail.com" className="flex items-center gap-4 text-slate-600 dark:text-gray-400 hover:text-emerald-600 dark:hover:text-emerald-400 transition-colors group">
                   <div className="p-3 bg-slate-100 dark:bg-white/5 rounded-full group-hover:bg-emerald-50 dark:group-hover:bg-emerald-500/10 transition-colors">
                     <Mail size={20} className="text-emerald-500" />
                   </div>
-                  <span className="font-medium">me.yuvraj432@gmail.com</span>
+                  <span className="font-medium">yuvraj.lpu432@gmail.com</span>
                 </a>
                 
                 <a href="tel:+919671666230" className="flex items-center gap-4 text-slate-600 dark:text-gray-400 hover:text-emerald-600 dark:hover:text-emerald-400 transition-colors group">
@@ -80,36 +84,86 @@ export default function Contact() {
             initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-50px" }} transition={{ duration: 0.5, delay: 0.4 }} variants={fadeUpVariants}
             className="lg:col-span-3"
           >
-            <form className="bg-white dark:bg-white/[0.02] border border-slate-200 dark:border-white/10 p-8 md:p-10 rounded-3xl shadow-xl shadow-slate-200/50 dark:shadow-none flex flex-col gap-6">
-              
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div className="flex flex-col gap-2">
-                  <label htmlFor="name" className="text-sm font-medium text-slate-700 dark:text-gray-300">Your Name</label>
-                  <input type="text" id="name" placeholder="John Doe" className="w-full bg-slate-50 dark:bg-black/50 border border-slate-200 dark:border-white/10 rounded-xl px-4 py-3 text-slate-900 dark:text-white focus:outline-none focus:border-emerald-500 dark:focus:border-emerald-400 focus:ring-1 focus:ring-emerald-500 transition-colors" />
+            {/* If the form successfully sent, show this message */}
+            {state.succeeded ? (
+              <div className="bg-white dark:bg-white/[0.02] border border-emerald-500/30 p-8 md:p-10 rounded-3xl shadow-xl flex flex-col items-center justify-center text-center h-full min-h-[400px]">
+                <div className="p-4 bg-emerald-50 dark:bg-emerald-500/10 rounded-full mb-6">
+                  <CheckCircle size={48} className="text-emerald-500" />
                 </div>
+                <h3 className="text-3xl font-bold text-slate-900 dark:text-white mb-4">Message Sent!</h3>
+                <p className="text-slate-600 dark:text-gray-400">
+                  Thank you for reaching out. I'll get back to you as soon as possible.
+                </p>
+              </div>
+            ) : (
+              /* Otherwise, show the form */
+              <form onSubmit={handleSubmit} className="bg-white dark:bg-white/[0.02] border border-slate-200 dark:border-white/10 p-8 md:p-10 rounded-3xl shadow-xl shadow-slate-200/50 dark:shadow-none flex flex-col gap-6">
                 
-                <div className="flex flex-col gap-2">
-                  <label htmlFor="email" className="text-sm font-medium text-slate-700 dark:text-gray-300">Your Email</label>
-                  <input type="email" id="email" placeholder="john@example.com" className="w-full bg-slate-50 dark:bg-black/50 border border-slate-200 dark:border-white/10 rounded-xl px-4 py-3 text-slate-900 dark:text-white focus:outline-none focus:border-emerald-500 dark:focus:border-emerald-400 focus:ring-1 focus:ring-emerald-500 transition-colors" />
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  <div className="flex flex-col gap-2">
+                    <label htmlFor="name" className="text-sm font-medium text-slate-700 dark:text-gray-300">Your Name</label>
+                    <input 
+                      type="text" 
+                      id="name" 
+                      name="name" 
+                      required
+                      placeholder="Your Name" 
+                      className="w-full bg-slate-50 dark:bg-black/50 border border-slate-200 dark:border-white/10 rounded-xl px-4 py-3 text-slate-900 dark:text-white focus:outline-none focus:border-emerald-500 dark:focus:border-emerald-400 focus:ring-1 focus:ring-emerald-500 transition-colors" 
+                    />
+                    <ValidationError prefix="Name" field="name" errors={state.errors} />
+                  </div>
+                  
+                  <div className="flex flex-col gap-2">
+                    <label htmlFor="email" className="text-sm font-medium text-slate-700 dark:text-gray-300">Your Email</label>
+                    <input 
+                      type="email" 
+                      id="email" 
+                      name="email" 
+                      required
+                      placeholder="name@example.com" 
+                      className="w-full bg-slate-50 dark:bg-black/50 border border-slate-200 dark:border-white/10 rounded-xl px-4 py-3 text-slate-900 dark:text-white focus:outline-none focus:border-emerald-500 dark:focus:border-emerald-400 focus:ring-1 focus:ring-emerald-500 transition-colors" 
+                    />
+                    <ValidationError prefix="Email" field="email" errors={state.errors} />
+                  </div>
                 </div>
-              </div>
 
-              <div className="flex flex-col gap-2">
-                <label htmlFor="subject" className="text-sm font-medium text-slate-700 dark:text-gray-300">Subject</label>
-                <input type="text" id="subject" placeholder="How can I help you?" className="w-full bg-slate-50 dark:bg-black/50 border border-slate-200 dark:border-white/10 rounded-xl px-4 py-3 text-slate-900 dark:text-white focus:outline-none focus:border-emerald-500 dark:focus:border-emerald-400 focus:ring-1 focus:ring-emerald-500 transition-colors" />
-              </div>
+                <div className="flex flex-col gap-2">
+                  <label htmlFor="subject" className="text-sm font-medium text-slate-700 dark:text-gray-300">Subject</label>
+                  <input 
+                    type="text" 
+                    id="subject" 
+                    name="subject" 
+                    required
+                    placeholder="How can I help you?" 
+                    className="w-full bg-slate-50 dark:bg-black/50 border border-slate-200 dark:border-white/10 rounded-xl px-4 py-3 text-slate-900 dark:text-white focus:outline-none focus:border-emerald-500 dark:focus:border-emerald-400 focus:ring-1 focus:ring-emerald-500 transition-colors" 
+                  />
+                  <ValidationError prefix="Subject" field="subject" errors={state.errors} />
+                </div>
 
-              <div className="flex flex-col gap-2">
-                <label htmlFor="message" className="text-sm font-medium text-slate-700 dark:text-gray-300">Message</label>
-                <textarea id="message" rows={5} placeholder="Write your message here..." className="w-full bg-slate-50 dark:bg-black/50 border border-slate-200 dark:border-white/10 rounded-xl px-4 py-3 text-slate-900 dark:text-white focus:outline-none focus:border-emerald-500 dark:focus:border-emerald-400 focus:ring-1 focus:ring-emerald-500 transition-colors resize-none"></textarea>
-              </div>
+                <div className="flex flex-col gap-2">
+                  <label htmlFor="message" className="text-sm font-medium text-slate-700 dark:text-gray-300">Message</label>
+                  <textarea 
+                    id="message" 
+                    name="message" 
+                    required
+                    rows={5} 
+                    placeholder="Write your message here..." 
+                    className="w-full bg-slate-50 dark:bg-black/50 border border-slate-200 dark:border-white/10 rounded-xl px-4 py-3 text-slate-900 dark:text-white focus:outline-none focus:border-emerald-500 dark:focus:border-emerald-400 focus:ring-1 focus:ring-emerald-500 transition-colors resize-none"
+                  ></textarea>
+                  <ValidationError prefix="Message" field="message" errors={state.errors} />
+                </div>
 
-              <button type="button" className="mt-2 w-full flex items-center justify-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white font-semibold py-4 rounded-xl transition-colors shadow-lg shadow-emerald-500/20">
-                <Send size={18} />
-                Send Message
-              </button>
+                <button 
+                  type="submit" 
+                  disabled={state.submitting}
+                  className="mt-2 w-full flex items-center justify-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white font-semibold py-4 rounded-xl transition-colors shadow-lg shadow-emerald-500/20 disabled:opacity-50 disabled:cursor-not-allowed"
+                >
+                  <Send size={18} />
+                  {state.submitting ? "Sending..." : "Send Message"}
+                </button>
 
-            </form>
+              </form>
+            )}
           </motion.div>
 
         </div>
