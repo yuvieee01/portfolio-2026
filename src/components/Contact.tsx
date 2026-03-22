@@ -39,7 +39,7 @@ export default function Contact() {
             initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-50px" }} transition={{ duration: 0.5, delay: 0.2 }} variants={fadeUpVariants}
             className="lg:col-span-2 flex flex-col gap-8"
           >
-            <div className="bg-white dark:bg-white/[0.02] border border-slate-200 dark:border-white/10 p-8 rounded-3xl shadow-xl shadow-slate-200/50 dark:shadow-none">
+            <div className="bg-white dark:bg-white/2 border border-slate-200 dark:border-white/10 p-8 rounded-3xl shadow-xl shadow-slate-200/50 dark:shadow-none">
               <h3 className="text-2xl font-bold text-slate-900 dark:text-white mb-6">Contact Information</h3>
               
               <div className="space-y-6">
@@ -86,7 +86,7 @@ export default function Contact() {
           >
             {/* If the form successfully sent, show this message */}
             {state.succeeded ? (
-              <div className="bg-white dark:bg-white/[0.02] border border-emerald-500/30 p-8 md:p-10 rounded-3xl shadow-xl flex flex-col items-center justify-center text-center h-full min-h-[400px]">
+              <div className="bg-white dark:bg-white/2 border border-emerald-500/30 p-8 md:p-10 rounded-3xl shadow-xl flex flex-col items-center justify-center text-center h-full min-h-100">
                 <div className="p-4 bg-emerald-50 dark:bg-emerald-500/10 rounded-full mb-6">
                   <CheckCircle size={48} className="text-emerald-500" />
                 </div>
@@ -97,7 +97,7 @@ export default function Contact() {
               </div>
             ) : (
               /* Otherwise, show the form */
-              <form onSubmit={handleSubmit} className="bg-white dark:bg-white/[0.02] border border-slate-200 dark:border-white/10 p-8 md:p-10 rounded-3xl shadow-xl shadow-slate-200/50 dark:shadow-none flex flex-col gap-6">
+              <form onSubmit={handleSubmit} className="bg-white dark:bg-white/2 border border-slate-200 dark:border-white/10 p-8 md:p-10 rounded-3xl shadow-xl shadow-slate-200/50 dark:shadow-none flex flex-col gap-6">
                 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div className="flex flex-col gap-2">

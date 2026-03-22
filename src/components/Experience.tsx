@@ -65,10 +65,10 @@ export default function Experience() {
               className="relative pl-8 md:pl-12"
             >
               {/* Glowing Timeline Dot */}
-              <div className="absolute -left-[11px] top-1.5 w-5 h-5 bg-slate-100 dark:bg-black rounded-full border-4 border-emerald-500 dark:border-emerald-400 shadow-[0_0_15px_rgba(16,185,129,0.5)]" />
+              <div className="absolute -left-2.75 top-1.5 w-5 h-5 bg-slate-100 dark:bg-black rounded-full border-4 border-emerald-500 dark:border-emerald-400 shadow-[0_0_15px_rgba(16,185,129,0.5)]" />
 
               {/* Experience Card */}
-              <div className="bg-white dark:bg-white/[0.02] border border-slate-200 dark:border-white/10 p-6 md:p-8 rounded-3xl shadow-xl shadow-slate-200/50 dark:shadow-none hover:border-emerald-500/30 dark:hover:bg-white/[0.04] transition-all duration-300">
+              <div className="bg-white dark:bg-white/2 border border-slate-200 dark:border-white/10 p-6 md:p-8 rounded-3xl shadow-xl shadow-slate-200/50 dark:shadow-none hover:border-emerald-500/30 dark:hover:bg-white/4 transition-all duration-300">
                 
                 <div className="flex flex-col md:flex-row md:justify-between md:items-start mb-6 gap-4">
                   <div>

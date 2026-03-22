@@ -78,7 +78,7 @@ export default function Certifications() {
       <div className="absolute top-1/3 right-1/4 w-96 h-96 bg-teal-400/10 dark:bg-teal-900/10 rounded-full blur-[120px] pointer-events-none" />
       <div className="absolute bottom-1/3 left-1/4 w-96 h-96 bg-emerald-400/10 dark:bg-emerald-900/10 rounded-full blur-[120px] pointer-events-none" />
 
-      <div className="max-w-[1400px] w-full z-10">
+      <div className="max-w-350 w-full z-10">
         <motion.div 
           initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-100px" }} transition={{ duration: 0.6 }} variants={fadeUpVariants}
           className="mb-16 md:mb-24 text-center px-6"
@@ -95,8 +95,8 @@ export default function Certifications() {
         <div className="w-full relative">
           
           {/* Left and Right Fade Gradients (Creates the illusion of cards fading in/out) */}
-          <div className="absolute top-0 left-0 w-12 md:w-32 h-full bg-gradient-to-r from-slate-50 dark:from-black to-transparent z-20 pointer-events-none" />
-          <div className="absolute top-0 right-0 w-12 md:w-32 h-full bg-gradient-to-l from-slate-50 dark:from-black to-transparent z-20 pointer-events-none" />
+          <div className="absolute top-0 left-0 w-12 md:w-32 h-full bg-linear-to-r from-slate-50 dark:from-black to-transparent z-20 pointer-events-none" />
+          <div className="absolute top-0 right-0 w-12 md:w-32 h-full bg-linear-to-l from-slate-50 dark:from-black to-transparent z-20 pointer-events-none" />
 
           {/* Draggable/Scrollable Marquee */}
           <div 
@@ -114,7 +114,7 @@ export default function Certifications() {
                 href={cred.link} 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="group block w-[320px] md:w-[400px] shrink-0 bg-white dark:bg-white/[0.02] border border-slate-200 dark:border-white/10 p-8 rounded-3xl flex-col shadow-xl shadow-slate-200/50 dark:shadow-none hover:border-emerald-500/50 dark:hover:bg-white/[0.04] hover:-translate-y-2 transition-all duration-300"
+                className="group block w-[320px] md:w-100 shrink-0 bg-white dark:bg-white/2 border border-slate-200 dark:border-white/10 p-8 rounded-3xl flex-col shadow-xl shadow-slate-200/50 dark:shadow-none hover:border-emerald-500/50 dark:hover:bg-white/4 hover:-translate-y-2 transition-all duration-300"
               >
                 <div className="flex justify-between items-start mb-6">
                   <div className="p-4 bg-slate-50 dark:bg-white/5 rounded-2xl border border-slate-100 dark:border-white/5 group-hover:scale-110 transition-transform duration-300">

@@ -42,7 +42,7 @@ export default function Projects() {
     <section id="projects" className="relative w-full bg-slate-50 dark:bg-black py-32 px-6 flex flex-col items-center justify-center overflow-hidden transition-colors duration-300">
       
       {/* Background Accents */}
-      <div className="absolute top-0 right-1/3 w-[600px] h-[600px] bg-emerald-400/5 dark:bg-emerald-900/10 rounded-full blur-[150px] pointer-events-none" />
+      <div className="absolute top-0 right-1/3 w-150 h-150 bg-emerald-400/5 dark:bg-emerald-900/10 rounded-full blur-[150px] pointer-events-none" />
       
       <div className="max-w-6xl w-full z-10">
         <motion.div 
@@ -66,7 +66,7 @@ export default function Projects() {
               viewport={{ once: true, margin: "-50px" }} 
               transition={{ duration: 0.5, delay: index * 0.2 }} 
               variants={fadeUpVariants}
-              className={`group relative bg-white dark:bg-white/[0.02] border border-slate-200 dark:border-white/10 p-8 md:p-10 rounded-3xl flex flex-col justify-between shadow-xl shadow-slate-200/50 dark:shadow-none hover:border-emerald-500/30 dark:hover:bg-white/[0.04] transition-all duration-500 ${project.featured && index === 0 ? 'lg:col-span-2' : ''}`}
+              className={`group relative bg-white dark:bg-white/2 border border-slate-200 dark:border-white/10 p-8 md:p-10 rounded-3xl flex flex-col justify-between shadow-xl shadow-slate-200/50 dark:shadow-none hover:border-emerald-500/30 dark:hover:bg-white/4 transition-all duration-500 ${project.featured && index === 0 ? 'lg:col-span-2' : ''}`}
             >
               {/* Top Section */}
               <div>
