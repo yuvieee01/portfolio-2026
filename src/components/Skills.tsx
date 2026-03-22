@@ -76,7 +76,7 @@ export default function Skills() {
             viewport={{ once: true, margin: "-50px" }} 
             transition={{ duration: 0.5, delay: index * 0.2 }} 
             variants={fadeUpVariants}
-            className="bg-white dark:bg-white/[0.03] border border-slate-200 dark:border-white/10 p-8 rounded-3xl text-left shadow-xl shadow-slate-200/50 dark:shadow-none hover:border-emerald-500/30 dark:hover:bg-white/[0.06] transition-all duration-300 flex flex-col"
+            className="bg-white dark:bg-white/3 border border-slate-200 dark:border-white/10 p-8 rounded-3xl text-left shadow-xl shadow-slate-200/50 dark:shadow-none hover:border-emerald-500/30 dark:hover:bg-white/6 transition-all duration-300 flex flex-col"
           >
             {category.icon}
             <h3 className="text-2xl font-bold text-slate-900 dark:text-white mb-6">{category.title}</h3>

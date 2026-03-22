@@ -11,8 +11,8 @@ export default function Hero() {
   return (
     <section id="home" className="relative h-screen w-full bg-slate-100 dark:bg-black flex items-center px-10 md:px-20 lg:px-32 overflow-hidden transition-colors duration-300">
       
-      <div className="absolute -top-32 -right-32 w-[500px] h-[500px] bg-teal-400/20 dark:bg-teal-400/15 rounded-full blur-[160px] pointer-events-none" />
-      <div className="absolute -bottom-32 -left-32 w-[500px] h-[500px] bg-emerald-400/20 dark:bg-emerald-400/15 rounded-full blur-[160px] pointer-events-none" />
+      <div className="absolute -top-32 -right-32 w-125 h-125 bg-teal-400/20 dark:bg-teal-400/15 rounded-full blur-[160px] pointer-events-none" />
+      <div className="absolute -bottom-32 -left-32 w-125 h-125 bg-emerald-400/20 dark:bg-emerald-400/15 rounded-full blur-[160px] pointer-events-none" />
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center w-full z-10 pt-20 md:pt-0">
         <div className="text-left flex flex-col items-start max-w-full lg:max-w-2xl">
@@ -32,7 +32,7 @@ export default function Hero() {
 
           <motion.div 
             initial="hidden" animate="visible" transition={{ duration: 0.6, delay: 0.3 }} variants={fadeUpVariants}
-            className="text-2xl md:text-3xl text-slate-600 dark:text-gray-400 font-mono font-light mb-8 mt-2 h-[40px]"
+            className="text-2xl md:text-3xl text-slate-600 dark:text-gray-400 font-mono font-light mb-8 mt-2 h-10"
           >
             <TypeAnimation
               sequence={[
@@ -74,7 +74,7 @@ export default function Hero() {
           className="hidden md:flex flex-col items-center justify-center relative aspect-square"
         >
           <div className="absolute inset-0 bg-emerald-500/10 rounded-full blur-[100px]" />
-          <div className="font-mono text-[10px] text-emerald-300/60 leading-relaxed p-6 bg-black/80 backdrop-blur-md rounded-xl border border-white/10 w-full max-w-sm rotate-[-3deg] shadow-2xl">
+          <div className="font-mono text-[10px] text-emerald-300/60 leading-relaxed p-6 bg-black/80 backdrop-blur-md rounded-xl border border-white/10 w-full max-w-sm -rotate-3 shadow-2xl">
             <div className="text-gray-500 mb-2">// Yuvraj.Pahwa // AI_Engine // Web_Architecture</div>
             <motion.div animate={{ y: [0, -5, 0] }} transition={{ repeat: Infinity, duration: 4, ease: "easeInOut" }}>def <span className="text-yellow-300">train_ai_model</span>(dataset, epochs):</motion.div>
             <motion.div animate={{ y: [0, -5, 0] }} transition={{ repeat: Infinity, duration: 4, ease: "easeInOut", delay: 0.2 }} className="pl-4">model = <span className="text-sky-300">BuildNeuralNet</span>(dataset)</motion.div>

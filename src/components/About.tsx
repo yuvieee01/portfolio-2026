@@ -35,7 +35,7 @@ export default function About() {
         
         <motion.div 
           initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-50px" }} transition={{ duration: 0.5, delay: 0.3 }} variants={fadeUpVariants}
-          className="bg-white dark:bg-white/[0.03] border border-slate-200 dark:border-white/10 p-8 rounded-2xl text-left shadow-lg shadow-slate-200/50 dark:shadow-none hover:border-emerald-500/30 dark:hover:bg-white/[0.06] transition-all duration-300"
+          className="bg-white dark:bg-white/3 border border-slate-200 dark:border-white/10 p-8 rounded-2xl text-left shadow-lg shadow-slate-200/50 dark:shadow-none hover:border-emerald-500/30 dark:hover:bg-white/6 transition-all duration-300"
         >
           <h3 className="text-emerald-600 dark:text-emerald-400 text-xl font-bold mb-3">AI & Machine Learning</h3>
           <p className="text-slate-600 dark:text-gray-400 text-sm leading-relaxed">
@@ -45,7 +45,7 @@ export default function About() {
 
         <motion.div 
           initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-50px" }} transition={{ duration: 0.5, delay: 0.4 }} variants={fadeUpVariants}
-          className="bg-white dark:bg-white/[0.03] border border-slate-200 dark:border-white/10 p-8 rounded-2xl text-left shadow-lg shadow-slate-200/50 dark:shadow-none hover:border-teal-500/30 dark:hover:bg-white/[0.06] transition-all duration-300"
+          className="bg-white dark:bg-white/3 border border-slate-200 dark:border-white/10 p-8 rounded-2xl text-left shadow-lg shadow-slate-200/50 dark:shadow-none hover:border-teal-500/30 dark:hover:bg-white/6 transition-all duration-300"
         >
           <h3 className="text-teal-600 dark:text-teal-400 text-xl font-bold mb-3">Full-Stack Architecture</h3>
           <p className="text-slate-600 dark:text-gray-400 text-sm leading-relaxed">
@@ -55,7 +55,7 @@ export default function About() {
 
         <motion.div 
           initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-50px" }} transition={{ duration: 0.5, delay: 0.5 }} variants={fadeUpVariants}
-          className="bg-white dark:bg-white/[0.03] border border-slate-200 dark:border-white/10 p-8 rounded-2xl text-left shadow-lg shadow-slate-200/50 dark:shadow-none hover:border-emerald-500/30 dark:hover:bg-white/[0.06] transition-all duration-300"
+          className="bg-white dark:bg-white/3 border border-slate-200 dark:border-white/10 p-8 rounded-2xl text-left shadow-lg shadow-slate-200/50 dark:shadow-none hover:border-emerald-500/30 dark:hover:bg-white/6 transition-all duration-300"
         >
           <h3 className="text-emerald-500 dark:text-emerald-300 text-xl font-bold mb-3">Impact-Driven Builder</h3>
           <p className="text-slate-600 dark:text-gray-400 text-sm leading-relaxed">
