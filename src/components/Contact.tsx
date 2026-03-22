@@ -9,8 +9,7 @@ export default function Contact() {
     visible: { opacity: 1, y: 0 }
   };
 
-  // Replace "YOUR_FORM_ID_HERE" with your actual Formspree ID (e.g., "mkgwjqwe")
-  const [state, handleSubmit] = useForm("mreywqpb");
+  const [state, handleSubmit] = useForm(process.env.NEXT_PUBLIC_FORMSPREE_ID!);
 
   return (
     <section id="contact" className="relative w-full bg-slate-50 dark:bg-black py-32 px-6 flex flex-col items-center justify-center overflow-hidden transition-colors duration-300">

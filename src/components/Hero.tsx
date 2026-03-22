@@ -58,12 +58,21 @@ export default function Hero() {
             initial="hidden" animate="visible" transition={{ duration: 0.6, delay: 0.5 }} variants={fadeUpVariants}
             className="flex gap-4"
           >
-            <button className="px-8 py-3 bg-emerald-600 text-white rounded-full font-medium hover:bg-emerald-700 transition flex items-center gap-2 shadow-lg shadow-emerald-500/20">
+            {/* LINKED: View Projects to #projects */}
+            <a 
+              href="#projects" 
+              className="px-8 py-3 bg-emerald-600 text-white rounded-full font-medium hover:bg-emerald-700 transition inline-flex items-center gap-2 shadow-lg shadow-emerald-500/20"
+            >
               View Projects <span>→</span>
-            </button>
-            <button className="px-8 py-3 bg-white dark:bg-white/10 text-slate-900 dark:text-white rounded-full border border-slate-300 dark:border-white/20 hover:bg-slate-100 dark:hover:bg-white/20 transition">
+            </a>
+
+            {/* LINKED: Contact Me to #contact */}
+            <a 
+              href="#contact" 
+              className="px-8 py-3 bg-white dark:bg-white/10 text-slate-900 dark:text-white rounded-full border border-slate-300 dark:border-white/20 hover:bg-slate-100 dark:hover:bg-white/20 transition inline-flex items-center"
+            >
               Contact Me
-            </button>
+            </a>
           </motion.div>
         </div>
 
