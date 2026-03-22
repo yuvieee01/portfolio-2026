@@ -13,7 +13,7 @@ export default function Hero() {
       </p>
 
       <h1 className="text-6xl md:text-8xl font-extrabold text-white mb-2">
-        Mannat <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500">Jain</span>
+        Yuvraj <span className="text-transparent bg-clip-text bg-linear-to-r from-blue-400 to-purple-500">Jain</span>
       </h1>
 
       <div className="text-2xl md:text-3xl text-gray-400 font-light mb-8">
