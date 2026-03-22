@@ -3,47 +3,36 @@ import { motion } from "framer-motion";
 import { TypeAnimation } from "react-type-animation";
 
 export default function Hero() {
-  // Define the standard fade-up animation variants
   const fadeUpVariants = {
     hidden: { opacity: 0, y: 40 },
     visible: { opacity: 1, y: 0 }
   };
 
   return (
-    <section className="relative h-screen w-full bg-black flex items-center px-10 md:px-20 lg:px-32 overflow-hidden">
+    <section id="home" className="relative h-screen w-full bg-slate-100 dark:bg-black flex items-center px-10 md:px-20 lg:px-32 overflow-hidden transition-colors duration-300">
       
-      {/* Background Glows - Rearranged per your request */}
-      {/* Top Right Orb (Teal) going upwards */}
-      <div className="absolute -top-32 -right-32 w-[500px] h-[500px] bg-teal-400/15 rounded-full blur-[160px] pointer-events-none" />
-      
-      {/* Bottom Left Orb (Emerald) going downwards */}
-      <div className="absolute -bottom-32 -left-32 w-[500px] h-[500px] bg-emerald-400/15 rounded-full blur-[160px] pointer-events-none" />
+      <div className="absolute -top-32 -right-32 w-[500px] h-[500px] bg-teal-400/20 dark:bg-teal-400/15 rounded-full blur-[160px] pointer-events-none" />
+      <div className="absolute -bottom-32 -left-32 w-[500px] h-[500px] bg-emerald-400/20 dark:bg-emerald-400/15 rounded-full blur-[160px] pointer-events-none" />
 
-      {/* Main Grid Structure: Split Screen */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center w-full z-10">
-        
-        {/* LEFT COLUMN: Your Content, now aligned Left */}
-        {/* We changed max-w-xl to lg:max-w-2xl to give it more room on desktop */}
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center w-full z-10 pt-20 md:pt-0">
         <div className="text-left flex flex-col items-start max-w-full lg:max-w-2xl">
           <motion.p 
             initial="hidden" animate="visible" transition={{ duration: 0.6, delay: 0.1 }} variants={fadeUpVariants}
-            className="text-emerald-400 tracking-[0.2em] text-xs font-bold mb-4 uppercase"
+            className="text-emerald-600 dark:text-emerald-400 tracking-[0.2em] text-xs font-bold mb-4 uppercase"
           >
             Engineering Intelligent Systems.
           </motion.p>
 
-          {/* We added whitespace-normal md:whitespace-nowrap and slightly adjusted the text sizing */}
           <motion.h1 
             initial="hidden" animate="visible" transition={{ duration: 0.6, delay: 0.2 }} variants={fadeUpVariants}
-            className="text-6xl md:text-7xl lg:text-8xl font-extrabold text-white mb-2 whitespace-normal md:whitespace-nowrap"
+            className="text-6xl md:text-7xl lg:text-8xl font-extrabold text-slate-900 dark:text-white mb-2 whitespace-normal md:whitespace-nowrap"
           >
-            Yuvraj <span className="text-transparent bg-clip-text bg-linear-to-r from-green-400 to-green-300">Pahwa</span>
+            Yuvraj <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-500 to-teal-400 dark:from-green-400 dark:to-green-300">Pahwa</span>
           </motion.h1>
 
-          {/* Running Text Container - Kept exactly as requested */}
           <motion.div 
             initial="hidden" animate="visible" transition={{ duration: 0.6, delay: 0.3 }} variants={fadeUpVariants}
-            className="text-2xl md:text-3xl text-gray-400 font-mono font-light mb-8 mt-2 h-[40px]"
+            className="text-2xl md:text-3xl text-slate-600 dark:text-gray-400 font-mono font-light mb-8 mt-2 h-[40px]"
           >
             <TypeAnimation
               sequence={[
@@ -59,7 +48,7 @@ export default function Hero() {
 
           <motion.p 
             initial="hidden" animate="visible" transition={{ duration: 0.6, delay: 0.4 }} variants={fadeUpVariants}
-            className="text-gray-400 leading-relaxed mb-10"
+            className="text-slate-600 dark:text-gray-400 leading-relaxed mb-10"
           >
             Computer Science Engineering student specializing in Artificial Intelligence and Machine Learning. 
             I bridge the gap between data and design, building everything from robust deep learning models to scalable, full-stack web applications.
@@ -69,30 +58,24 @@ export default function Hero() {
             initial="hidden" animate="visible" transition={{ duration: 0.6, delay: 0.5 }} variants={fadeUpVariants}
             className="flex gap-4"
           >
-            <button className="px-8 py-3 bg-emerald-600 text-white rounded-full font-medium hover:bg-emerald-700 transition flex items-center gap-2">
+            <button className="px-8 py-3 bg-emerald-600 text-white rounded-full font-medium hover:bg-emerald-700 transition flex items-center gap-2 shadow-lg shadow-emerald-500/20">
               View Projects <span>→</span>
             </button>
-            <button className="px-8 py-3 bg-white/10 text-white rounded-full border border-white/20 hover:bg-white/20 transition">
+            <button className="px-8 py-3 bg-white dark:bg-white/10 text-slate-900 dark:text-white rounded-full border border-slate-300 dark:border-white/20 hover:bg-slate-100 dark:hover:bg-white/20 transition">
               Contact Me
             </button>
           </motion.div>
         </div>
 
-        {/* ========================================================= */}
-        {/* RIGHT COLUMN: The Coder Animation/Illustration Area      */}
-        {/* ========================================================= */}
         <motion.div 
           initial={{ opacity: 0, x: 50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 1, delay: 0.6, ease: "easeOut" }}
           className="hidden md:flex flex-col items-center justify-center relative aspect-square"
         >
-          {/* A soft glow just for the coder animation area */}
           <div className="absolute inset-0 bg-emerald-500/10 rounded-full blur-[100px]" />
-
-          {/* Stylized Animated "Code Flow" to represent coding */}
-          <div className="font-mono text-[10px] text-emerald-300/60 leading-relaxed p-6 bg-black/40 backdrop-blur-sm rounded-xl border border-white/5 w-full max-w-sm rotate-[-3deg] shadow-2xl">
-            <div className="text-gray-600 mb-2">// Yuvraj.Pahwa // AI_Engine // Web_Architecture</div>
+          <div className="font-mono text-[10px] text-emerald-300/60 leading-relaxed p-6 bg-black/80 backdrop-blur-md rounded-xl border border-white/10 w-full max-w-sm rotate-[-3deg] shadow-2xl">
+            <div className="text-gray-500 mb-2">// Yuvraj.Pahwa // AI_Engine // Web_Architecture</div>
             <motion.div animate={{ y: [0, -5, 0] }} transition={{ repeat: Infinity, duration: 4, ease: "easeInOut" }}>def <span className="text-yellow-300">train_ai_model</span>(dataset, epochs):</motion.div>
             <motion.div animate={{ y: [0, -5, 0] }} transition={{ repeat: Infinity, duration: 4, ease: "easeInOut", delay: 0.2 }} className="pl-4">model = <span className="text-sky-300">BuildNeuralNet</span>(dataset)</motion.div>
             <motion.div animate={{ y: [0, -5, 0] }} transition={{ repeat: Infinity, duration: 4, ease: "easeInOut", delay: 0.4 }} className="pl-4">optimizer = <span className="text-sky-300">Adam</span>(lr=0.001)</motion.div>
@@ -100,13 +83,10 @@ export default function Hero() {
             <motion.div animate={{ y: [0, -5, 0] }} transition={{ repeat: Infinity, duration: 4, ease: "easeInOut", delay: 0.8 }} className="pl-8">loss = <span className="text-yellow-300">train_step</span>(model, dataset)</motion.div>
             <motion.div animate={{ y: [0, -5, 0] }} transition={{ repeat: Infinity, duration: 4, ease: "easeInOut", delay: 1.0 }} className="pl-8 text-green-300/80"># Model is converging nicely...</motion.div>
             <motion.div animate={{ y: [0, -5, 0] }} transition={{ repeat: Infinity, duration: 4, ease: "easeInOut", delay: 1.2 }} className="pl-4"><span className="text-purple-300">return</span> model</motion.div>
-            <div className="mt-4 text-emerald-300">STATUS: TRAINING IN PROGRESS...</div>
+            <div className="mt-4 text-emerald-400">STATUS: TRAINING IN PROGRESS...</div>
             <motion.div initial={{ width: "0%" }} animate={{ width: "100%" }} transition={{ repeat: Infinity, duration: 10, ease: "linear" }} className="h-1 bg-emerald-500 mt-1" />
           </div>
-
-          {/* If you find a 3D model or graphic you like later, you would put it here */}
         </motion.div>
-
       </div>
     </section>
   );
