@@ -19,28 +19,28 @@ export default function Certifications() {
       title: "Complete 2026 Python Bootcamp: Learn Python from Scratch",
       issuer: "Udemy",
       date: "Jan 2026",
-      link: "#", 
+      link: "https://drive.google.com/file/d/1iueAtzus-BveRA9w74Jww03T-TUxhhZ3/view?usp=sharing", 
       icon: <Trophy size={28} className="text-emerald-500 dark:text-emerald-400" />
     },
     {
       title: "Master Generative AI & Generative AI tools",
       issuer: "Udemy",
       date: "Aug 2025",
-      link: "#",
+      link: "https://drive.google.com/file/d/1uLE2H6t16PCyT15-QMxKQQlwLm-FeLrg/view?usp=sharing",
       icon: <Award size={28} className="text-teal-500 dark:text-teal-400" />
     },
     {
       title: "Advanced Python for ML & AI",
       issuer: "CSE Pathshala",
       date: "Jul 2025",
-      link: "#",
+      link: "https://drive.google.com/file/d/1_2Bd7uxBUm6NGY5li89oBf4hupJsQnxl/view?usp=sharing",
       icon: <BrainCircuit size={28} className="text-emerald-600 dark:text-emerald-500" />
     },
     {
       title: "Unrevealing Basic Python towards ML/AI",
       issuer: "CSE Pathshala",
       date: "Mar 2024",
-      link: "#",
+      link: "https://drive.google.com/file/d/17gPDMDLgLsNUUZ9r6_l_3a4GgvGkV5LI/view?usp=sharing",
       icon: <Code size={28} className="text-teal-600 dark:text-teal-500" />
     }
   ];
