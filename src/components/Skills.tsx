@@ -2,10 +2,10 @@
 import { motion } from "framer-motion";
 import { 
   SiPython, SiCplusplus, SiC, SiJavascript, SiHtml5, 
-  SiDjango, SiMysql, SiGit, SiGithub, SiSelenium, SiUbuntu, SiApple 
+  SiDjango, SiMysql, SiGit, SiGithub, SiSelenium, SiUbuntu, SiApple, SiDocker 
 } from "react-icons/si";
 import { FaJava, FaCss3Alt, FaWindows } from "react-icons/fa";
-import { Code2, Database, Wrench, Users, Lightbulb, RefreshCcw, Clock, Speaker, Brain, StarIcon, Laptop } from "lucide-react";
+import { Code2, Database, Wrench, Users, Lightbulb, RefreshCcw, Clock, Speaker, Brain } from "lucide-react";
 
 export default function Skills() {
   const fadeUpVariants = {
@@ -49,6 +49,7 @@ export default function Skills() {
         { name: "Ubuntu", logo: <SiUbuntu /> },
         { name: "MacOS", logo: <SiApple /> },
         { name: "Windows", logo: <FaWindows /> },
+        { name: "Docker", logo: <SiDocker /> },
       ]
     },
     {

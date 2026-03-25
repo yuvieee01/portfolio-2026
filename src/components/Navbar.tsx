@@ -61,7 +61,7 @@ export default function Navbar() {
         )}
 
         <a 
-          href="/Yuvraj_Resume.pdf" 
+          href="/Yuvraj_CV.pdf" 
           target="_blank" 
           rel="noopener noreferrer"
           className="flex items-center gap-2 px-4 py-2 bg-slate-900 dark:bg-white/10 text-white rounded-full border border-transparent dark:border-white/20 hover:bg-slate-800 dark:hover:bg-white/20 transition text-sm"
