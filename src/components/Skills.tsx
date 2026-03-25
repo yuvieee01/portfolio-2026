@@ -57,10 +57,17 @@ export default function Skills() {
       skills: [
         { name: "Collaboration", logo: <Users size={16} /> },
         { name: "Adaptability", logo: <RefreshCcw size={16} /> },
-        { name: "Problem Solving", logo: <Lightbulb size={16} /> },
+        { name: "Time Management", logo: <Lightbulb size={16} /> },
+        { name: "Communication", logo: <Users size={16} /> },
+        { name: "Critical Thinking", logo: <Lightbulb size={16} /> },
+        { name: "Leadership", logo: <Users size={16} /> },
+        { name: "Decision Making", logo: <Lightbulb size={16} /> },
+        { name: "Teamwork", logo: <Users size={16} /> },
+        { name: "Work Ethic", logo: <Lightbulb size={16} /> },
       ]
     }
-  ];
+  ]
+;
 
   return (
     <section id="skills" className="relative w-full bg-slate-100 dark:bg-black py-32 px-6 flex flex-col items-center justify-center text-center overflow-hidden transition-colors duration-300">
