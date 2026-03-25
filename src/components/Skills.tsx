@@ -5,7 +5,7 @@ import {
   SiDjango, SiMysql, SiGit, SiGithub, SiSelenium, SiUbuntu, SiApple 
 } from "react-icons/si";
 import { FaJava, FaCss3Alt, FaWindows } from "react-icons/fa";
-import { Code2, Database, Wrench, Users, Lightbulb, RefreshCcw } from "lucide-react";
+import { Code2, Database, Wrench, Users, Lightbulb, RefreshCcw, Clock, Speaker, Brain, StarIcon, Laptop } from "lucide-react";
 
 export default function Skills() {
   const fadeUpVariants = {
@@ -57,13 +57,13 @@ export default function Skills() {
       skills: [
         { name: "Collaboration", logo: <Users size={16} /> },
         { name: "Adaptability", logo: <RefreshCcw size={16} /> },
-        { name: "Time Management", logo: <Lightbulb size={16} /> },
-        { name: "Communication", logo: <Users size={16} /> },
-        { name: "Critical Thinking", logo: <Lightbulb size={16} /> },
-        { name: "Leadership", logo: <Users size={16} /> },
+        { name: "Time Management", logo: <Clock size={16} /> },
+        { name: "Communication", logo: <Speaker size={16} /> },
+        { name: "Critical Thinking", logo: <Brain size={16} /> },
+        { name: "Leadership", logo: <StarIcon size={16} /> },
         { name: "Decision Making", logo: <Lightbulb size={16} /> },
         { name: "Teamwork", logo: <Users size={16} /> },
-        { name: "Work Ethic", logo: <Lightbulb size={16} /> },
+        { name: "Work Ethic", logo: <Laptop size={16} /> },
       ]
     }
   ]
