@@ -55,12 +55,10 @@ export default function Skills() {
       title: "Soft Skills",
       icon: <Users className="text-teal-500 dark:text-teal-400 mb-4" size={32} />,
       skills: [
-        { name: "Collaboration", logo: <Users size={16} /> },
         { name: "Adaptability", logo: <RefreshCcw size={16} /> },
         { name: "Time Management", logo: <Clock size={16} /> },
         { name: "Communication", logo: <Speaker size={16} /> },
         { name: "Critical Thinking", logo: <Brain size={16} /> },
-        { name: "Decision Making", logo: <Lightbulb size={16} /> },
         { name: "Teamwork", logo: <Users size={16} /> },
       ]
     }
