@@ -19,6 +19,15 @@ export default function Projects() {
       featured: true
     },
     {
+      title: "BidForge",
+      subtitle: "British-Style Reverse Auction System",
+      description: "A high-performance, full-stack British-style reverse auction platform. Buyers post Requests for Quotations (RFQs), and suppliers compete in real-time by submitting increasingly lower bids. The system ensures fairness through intelligent auto-extension logic and strict transactional integrity.",
+      tech: ["Django", "PostgreSQL", "React (Vite)", "Tailwind CSS", "JWT"],
+      github: "https://github.com/yuvieee01/BidForge-RFQ",
+      live: "",
+      featured: true
+    },
+    {
       title: "Autonomous Productivity Agent",
       subtitle: "Agentic AI Planning System",
       description: "Engineered an autonomous system utilizing a full Observe - Reason - Plan - Act - Reflect loop for dynamic task prioritization. Designed explainable priority models combining task importance and historical performance to generate deterministic planning decisions without relying on ML training.",
