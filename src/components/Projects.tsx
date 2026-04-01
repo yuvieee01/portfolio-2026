@@ -28,6 +28,15 @@ export default function Projects() {
       featured: true
     },
     {
+      title: "Resume Ranker",
+      subtitle: "Automated Candidate Screening",
+      description: "Developed a scalable Python/spaCy/scikit-learn prototype to automate candidate screening and feature extraction from resumes. Implemented TF-IDF, cosine similarity to rank candidates against job descriptions with a relevance score (0.0 to 1.0). Analyzed ethical data bias considerations (gender, experience proxies).",
+      tech: ["Python", "NLP", "Machine Learning"],
+      github: "https://github.com/yuvieee01/Resume-Ranker",
+      live: "",
+      featured: true
+    },
+    {
       title: "Rakshak & Karamsetu",
       subtitle: "Hackathon & NGO Initiatives",
       description: "Developed 'Rakshak', a women's safety application that secured a Top 10 position in the Smart India Hackathon 2024. Additionally, successfully developed and deployed a responsive live web platform for the Karamsetu Foundation NGO.",
