@@ -36,14 +36,13 @@ export default function Hero() {
           >
             <TypeAnimation
               sequence={[
-                'Tech Enthusiast', 2000,
-                'Artificial Intelligence', 2000,
-                'Machine Learning', 2000, 
-                'Natural Language Processing', 2000,
-                'Deep Learning', 2000,
-                'Data Structures & Algorithms', 2000,
-                'Analytical Thinking', 2000,
-                'Django', 2000,
+                'Tech Enthusiast...', 2000,
+                'Artificial Intelligence...', 2000,
+                'Machine Learning...', 2000, 
+                'Natural Language Processing...', 2000,
+                'Deep Learning...', 2000,
+                'Data Structures & Algorithms...', 2000,
+                'Analytical Thinking...', 2000,
               ]}
               wrapper="span"
               speed={50}
