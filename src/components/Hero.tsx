@@ -27,7 +27,7 @@ export default function Hero() {
             initial="hidden" animate="visible" transition={{ duration: 0.6, delay: 0.2 }} variants={fadeUpVariants}
             className="text-6xl md:text-7xl lg:text-8xl font-extrabold text-slate-900 dark:text-white mb-2 whitespace-normal md:whitespace-nowrap"
           >
-            Yuvraj <span className="text-transparent bg-clip-text bg-linear-to-r from-emerald-500 to-teal-400 dark:from-green-400 dark:to-green-300">Pahwa</span>
+            Yuvraj
           </motion.h1>
 
           <motion.div 
