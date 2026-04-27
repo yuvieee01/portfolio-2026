@@ -1,6 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
-import { Award, BrainCircuit, Code, Trophy, ExternalLink } from "lucide-react";
+import { Award, BrainCircuit, Code, Trophy, ExternalLink, Brain } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
 import { DiDocker } from "react-icons/di";
 
@@ -49,7 +49,7 @@ export default function Certifications() {
       issuer: "CSE Pathshala",
       date: "Mar 2024",
       link: "https://drive.google.com/file/d/17gPDMDLgLsNUUZ9r6_l_3a4GgvGkV5LI/view?usp=sharing",
-      icon: <Code size={28} className="text-teal-600 dark:text-teal-500" />
+      icon: <Brain size={28} className="text-teal-600 dark:text-teal-500" />
     }
   ];
 
