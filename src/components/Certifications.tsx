@@ -2,6 +2,7 @@
 import { motion } from "framer-motion";
 import { Award, BrainCircuit, Code, Trophy, ExternalLink } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
+import { DiDocker } from "react-icons/di";
 
 export default function Certifications() {
   const fadeUpVariants = {
@@ -15,6 +16,13 @@ export default function Certifications() {
   // 1. ADD YOUR LINKS HERE
   // Replace the "#" with your actual certificate URLs
   const credentials = [
+    {
+      title: "Docker Training Course for the Absolute Beginner",
+      issuer: "KodeKloud",
+      date: "April 2026",
+      link: "https://drive.google.com/file/d/1SauxbjtYam8BFE_CTpq9tJDbYJGUsA7z/view?usp=sharing",
+      icon: <DiDocker size={28} className="text-teal-500 dark:text-teal-400" />
+    },
     {
       title: "Complete 2026 Python Bootcamp: Learn Python from Scratch",
       issuer: "Udemy",
