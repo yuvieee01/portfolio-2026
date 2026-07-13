@@ -19,16 +19,6 @@ export default function Experience() {
         "Engineered a core ranking model utilizing vectorization and similarity scoring to objectively measure resume relevance.",
         "Analyzed ethical data bias and implemented fairness mitigation strategies, specifically addressing gender and experience proxies."
       ]
-    },
-    {
-      role: "Freelance Web Developer",
-      company: "Karamsetu Foundation (NGO)",
-      date: "Sept 2024",
-      icon: <Globe size={20} className="text-teal-500 dark:text-teal-400" />,
-      bullets: [
-        "Successfully developed and deployed a fully responsive, live web platform to support the NGO's community initiatives.",
-        "Managed end-to-end development, bridging the gap between the organization's real-world impact and their digital presence."
-      ]
     }
   ];
 
