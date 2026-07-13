@@ -19,13 +19,13 @@ export default function Projects() {
       featured: true
     },
     {
-      title: "BidForge",
-      subtitle: "British-Style Reverse Auction System",
-      description: "A high-performance, full-stack British-style reverse auction platform. Buyers post Requests for Quotations (RFQs), and suppliers compete in real-time by submitting increasingly lower bids. The system ensures fairness through intelligent auto-extension logic and strict transactional integrity.",
-      tech: ["Django", "PostgreSQL", "React (Vite)", "Tailwind CSS", "JWT"],
-      github: "https://github.com/yuvieee01/BidForge-RFQ",
-      live: "",
-      featured: true
+      title: "InvestAgent",
+      subtitle: "AI-Powered Investment Research Agent",
+      description: "An autonomous multi-agent system that researches any public company in real time and delivers a structured INVEST / PASS / MONITOR verdict with confidence scoring, bullish/bearish factor analysis, and full reasoning — powered by a LangGraph agent pipeline, Tavily web search, and Google Gemini LLMs.",
+      tech: ["Next.js 16", "LangGraph", "Tavily", "Gemini", "React 19"],
+      github: "https://github.com/yuvieee01/InvestAgent",
+      live: "https://investagent-python.vercel.app/",
+      featured: false
     },
     {
       title: "Autonomous Productivity Agent",
@@ -33,17 +33,17 @@ export default function Projects() {
       description: "Engineered an autonomous system utilizing a full Observe - Reason - Plan - Act - Reflect loop for dynamic task prioritization. Designed explainable priority models combining task importance and historical performance to generate deterministic planning decisions without relying on ML training.",
       tech: ["Python", "Agentic Architecture", "Algorithmic Logic"],
       github: "https://github.com/yuvieee01/planner-agent",
-      live: "",
-      featured: true
+      live: "https://autosched-python.vercel.app/",
+      featured: false
     },
     {
       title: "Resume Ranker",
       subtitle: "Automated Candidate Screening",
       description: "Developed a scalable Python/spaCy/scikit-learn prototype to automate candidate screening and feature extraction from resumes. Implemented TF-IDF, cosine similarity to rank candidates against job descriptions with a relevance score (0.0 to 1.0). Analyzed ethical data bias considerations (gender, experience proxies).",
-      tech: ["Python", "NLP", "Machine Learning"],
+      tech: ["Python", "NLP", "Machine Learning", "Data Cleaning"],
       github: "https://github.com/yuvieee01/Resume-Ranker",
       live: "",
-      featured: true
+      featured: false
     },
     {
       title: "Rakshak & Karamsetu",
