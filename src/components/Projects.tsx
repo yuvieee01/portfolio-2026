@@ -42,7 +42,7 @@ export default function Projects() {
       description: "Developed a scalable Python/spaCy/scikit-learn prototype to automate candidate screening and feature extraction from resumes. Implemented TF-IDF, cosine similarity to rank candidates against job descriptions with a relevance score (0.0 to 1.0). Analyzed ethical data bias considerations (gender, experience proxies).",
       tech: ["Python", "NLP", "Machine Learning", "Data Cleaning"],
       github: "https://github.com/yuvieee01/Resume-Ranker",
-      live: "",
+      live: "https://resumeranker-ml.vercel.app/",
       featured: false
     },
     {
