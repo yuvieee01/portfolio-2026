@@ -36,16 +36,17 @@ export default function Hero() {
           >
             <TypeAnimation
               sequence={[
-                'Tech Enthusiast...', 2000,
-                'Artificial Intelligence...', 2000,
-                'Machine Learning...', 2000, 
-                'Natural Language Processing...', 2000,
-                'Deep Learning...', 2000,
-                'Data Structures & Algorithms...', 2000,
-                'Analytical Thinking...', 2000,
+                'Tech Enthusiast...', 1000,
+                'Artificial Intelligence...', 1000,
+                'Machine Learning...', 1000, 
+                'Natural Language Processing...', 1000,
+                'Deep Learning...', 1000,
+                'Generative AI...', 1000,
+                'Data Structures & Algorithms...', 1000,
+                'Analytical Thinking...', 1000,
               ]}
               wrapper="span"
-              speed={50}
+              speed={30}
               repeat={Infinity}
             />
           </motion.div>
