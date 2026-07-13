@@ -5,7 +5,7 @@ export default function Footer() {
     <footer className="w-full bg-slate-100 dark:bg-black border-t border-slate-200 dark:border-white/10 py-8 px-6 md:px-10 flex flex-col md:flex-row justify-between items-center text-slate-500 dark:text-gray-500 text-sm transition-colors duration-300 gap-6">
       
       {/* Copyright */}
-      <p>© {new Date().getFullYear()} Yuvraj Pahwa. All rights reserved.</p>
+      <p>© {new Date().getFullYear()} Yuvraj. All rights reserved.</p>
       
       {/* Social Links */}
       <div className="flex items-center gap-6">
