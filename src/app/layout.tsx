@@ -14,8 +14,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Yuvraj Pahwa | Portfolio",
-  description: "AI & Full Stack Developer Portfolio",
+  title: "Yuvraj | Portfolio",
+  description: "AIML & GenAI Engineer Portfolio",
 };
 
 export default function RootLayout({
