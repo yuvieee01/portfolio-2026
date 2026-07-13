@@ -14,7 +14,7 @@ export default function Academics() {
       degree: "B.Tech. - Computer Science and Engineering (AI and ML)",
       duration: "Aug 2023 - Present",
       location: "Punjab, India",
-      score: "CGPA: 8.44",
+      score: "CGPA: 8.42",
       icon: <GraduationCap size={32} className="text-emerald-600 dark:text-emerald-400" />,
       featured: true
     },
