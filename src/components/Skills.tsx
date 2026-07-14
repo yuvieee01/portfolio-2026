@@ -2,7 +2,17 @@
 import { motion } from "framer-motion";
 import { 
   SiPython, SiCplusplus, SiC, SiJavascript, SiHtml5, 
-  SiDjango, SiMysql, SiGit, SiGithub, SiSelenium, SiUbuntu, SiApple, SiDocker 
+  SiDjango, SiMysql, SiGit, SiGithub, SiSelenium, SiUbuntu, SiApple, SiDocker, 
+  SiSqlite,
+  SiPostgresql,
+  SiH2Database,
+  SiThemoviedatabase,
+  SiNumpy,
+  SiPandas,
+  SiPytorch,
+  SiTensorflow,
+  SiHuggingface,
+  SiNextdotjs
 } from "react-icons/si";
 import { FaJava, FaCss3Alt, FaWindows } from "react-icons/fa";
 import { Code2, Database, Wrench, Users, Lightbulb, RefreshCcw, Clock, Speaker, Brain } from "lucide-react";
@@ -20,22 +30,22 @@ export default function Skills() {
       skills: [
         { name: "Python", logo: <SiPython /> },
         { name: "Java", logo: <FaJava /> },
-        { name: "C++", logo: <SiCplusplus /> },
-        { name: "C", logo: <SiC /> },
-        { name: "JavaScript", logo: <SiJavascript /> },
+        { name: "Next.js", logo: <SiNextdotjs /> },
+        { name: "SQL", logo: <Database /> },
         { name: "HTML5", logo: <SiHtml5 /> },
         { name: "CSS3", logo: <FaCss3Alt /> },
       ]
     },
     {
-      title: "Backend & Core",
+      title: "Frameworks & Libraries",
       icon: <Database className="text-teal-600 dark:text-teal-500 mb-4" size={32} />,
       skills: [
         { name: "Django", logo: <SiDjango /> },
-        { name: "Data Structures", logo: <Code2 size={16} /> }, 
-        { name: "Algorithms", logo: <Code2 size={16} /> },
-        { name: "OOP", logo: <Code2 size={16} /> },
-        { name: "Modular Architecture", logo: <Database size={16} /> },
+        { name: "NumPy", logo: <SiNumpy /> }, 
+        { name: "Pandas", logo: <SiPandas /> },
+        { name: "PyTorch", logo: <SiPytorch /> },
+        { name: "TensorFlow", logo: <SiTensorflow /> },
+        { name: "Hugging Face", logo: <SiHuggingface /> },
       ]
     },
     {
@@ -43,24 +53,21 @@ export default function Skills() {
       icon: <Wrench className="text-emerald-500 dark:text-emerald-400 mb-4" size={32} />,
       skills: [
         { name: "MySQL", logo: <SiMysql /> },
+        { name: "SQLite", logo: <SiSqlite /> },
+        { name: "Docker", logo: <SiDocker /> },
         { name: "Git", logo: <SiGit /> },
         { name: "GitHub", logo: <SiGithub /> },
-        { name: "Selenium", logo: <SiSelenium /> },
-        { name: "Ubuntu", logo: <SiUbuntu /> },
         { name: "MacOS", logo: <SiApple /> },
-        { name: "Windows", logo: <FaWindows /> },
-        { name: "Docker", logo: <SiDocker /> },
+        { name: "Ubuntu", logo: <SiUbuntu /> },
       ]
     },
     {
       title: "Soft Skills",
       icon: <Users className="text-teal-500 dark:text-teal-400 mb-4" size={32} />,
       skills: [
-        { name: "Adaptability", logo: <RefreshCcw size={16} /> },
         { name: "Time Management", logo: <Clock size={16} /> },
         { name: "Communication", logo: <Speaker size={16} /> },
         { name: "Critical Thinking", logo: <Brain size={16} /> },
-        { name: "Teamwork", logo: <Users size={16} /> },
       ]
     }
   ]
