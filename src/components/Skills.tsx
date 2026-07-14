@@ -16,6 +16,7 @@ import {
 } from "react-icons/si";
 import { FaJava, FaCss3Alt, FaWindows } from "react-icons/fa";
 import { Code2, Database, Wrench, Users, Lightbulb, RefreshCcw, Clock, Speaker, Brain } from "lucide-react";
+import { BsPeople } from "react-icons/bs";
 
 export default function Skills() {
   const fadeUpVariants = {
@@ -65,9 +66,10 @@ export default function Skills() {
       title: "Soft Skills",
       icon: <Users className="text-teal-500 dark:text-teal-400 mb-4" size={32} />,
       skills: [
-        { name: "Time Management", logo: <Clock size={16} /> },
-        { name: "Communication", logo: <Speaker size={16} /> },
-        { name: "Critical Thinking", logo: <Brain size={16} /> },
+        { name: "Time Management", logo: <Clock size={18} /> },
+        { name: "Communication", logo: <Speaker size={18} /> },
+        { name: "Critical Thinking", logo: <Brain size={18} /> },
+        { name: "Teamwork", logo: <BsPeople /> },
       ]
     }
   ]
